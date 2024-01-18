@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.11.2 on win32)" generated="20240118 16:41:53.907" rpa="false">
+<suite id="s1" name="ProyekBigio" source="C:\Users\User\OneDrive\Documents\Semester 5\TugasBigio\ProyekBigio">
+<suite id="s1-s1" name="TestSuite" source="C:\Users\User\OneDrive\Documents\Semester 5\TugasBigio\ProyekBigio\TestSuite">
+<suite id="s1-s1-s1" name="PassForgotPassword" source="C:\Users\User\OneDrive\Documents\Semester 5\TugasBigio\ProyekBigio\TestSuite\PassForgotPassword.robot">
+<test id="s1-s1-s1-t1" name="InvalidForgotPasswordTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://karuniasipoholon.com/auth/forgot</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20240118 16:41:54.170" level="INFO">Opening browser 'chrome' to base url 'https://karuniasipoholon.com/auth/forgot'.</msg>
+<status status="PASS" starttime="20240118 16:41:54.170" endtime="20240118 16:41:56.209"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20240118 16:41:56.209" endtime="20240118 16:41:56.211"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20240118 16:41:58.212" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240118 16:41:56.212" endtime="20240118 16:41:58.212"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="form_forgot_password"]/div[1]/input</arg>
+<arg>yudhi3030@gmail.com</arg>
+</arguments>
+<msg timestamp="20240118 16:41:58.213" level="INFO">Typing text 'yudhi3030@gmail.com' into text field '//*[@id="form_forgot_password"]/div[1]/input'.</msg>
+<status status="PASS" starttime="20240118 16:41:58.212" endtime="20240118 16:41:58.340"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>8</arg>
+</arguments>
+<msg timestamp="20240118 16:42:06.342" level="INFO">Slept 8 seconds</msg>
+<status status="PASS" starttime="20240118 16:41:58.341" endtime="20240118 16:42:06.342"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="tombol_forgot_password"]</arg>
+</arguments>
+<msg timestamp="20240118 16:42:06.343" level="INFO">Clicking button '//*[@id="tombol_forgot_password"]'.</msg>
+<status status="PASS" starttime="20240118 16:42:06.343" endtime="20240118 16:42:06.417"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20240118 16:42:08.419" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240118 16:42:06.417" endtime="20240118 16:42:08.420"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="form_reset_password"]/div[1]/input</arg>
+<arg>yudhi3030@gmail.com</arg>
+</arguments>
+<msg timestamp="20240118 16:42:08.421" level="INFO">Typing text 'yudhi3030@gmail.com' into text field '//*[@id="form_reset_password"]/div[1]/input'.</msg>
+<msg timestamp="20240118 16:42:08.541" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-34.png"&gt;&lt;img src="selenium-screenshot-34.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240118 16:42:08.547" level="FAIL">UnexpectedAlertPresentException: Alert Text: Email not found.
+Message: unexpected alert open: {Alert text : Email not found.}
+  (Session info: chrome=120.0.6099.217)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D04E2142+3514994]
+	(No symbol) [0x00007FF6D0100CE2]
+	(No symbol) [0x00007FF6CFFA76AA]
+	(No symbol) [0x00007FF6D0032CCC]
+	(No symbol) [0x00007FF6D0015D93]
+	(No symbol) [0x00007FF6CFFE4BDC]
+	(No symbol) [0x00007FF6CFFE5C64]
+	GetHandleVerifier [0x00007FF6D050E16B+3695259]
+	GetHandleVerifier [0x00007FF6D0566737+4057191]
+	GetHandleVerifier [0x00007FF6D055E4E3+4023827]
+	GetHandleVerifier [0x00007FF6D02304F9+689705]
+	(No symbol) [0x00007FF6D010C048]
+	(No symbol) [0x00007FF6D0108044]
+	(No symbol) [0x00007FF6D01081C9]
+	(No symbol) [0x00007FF6D00F88C4]
+	BaseThreadInitThunk [0x00007FFC8D2E257D+29]
+	RtlUserThreadStart [0x00007FFC8F56AA58+40]
+</msg>
+<status status="FAIL" starttime="20240118 16:42:08.420" endtime="20240118 16:42:08.549"></status>
+</kw>
+<status status="FAIL" starttime="20240118 16:41:54.169" endtime="20240118 16:42:08.550" critical="yes">UnexpectedAlertPresentException: Alert Text: Email not found.
+Message: unexpected alert open: {Alert text : Email not found.}
+  (Session info: chrome=120.0.6099.217)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D04E2142+3514994]
+	(No symbol) [0x00007FF6D0100CE2]
+	(No symbol) [0x00007FF6CFFA76AA]
+	(No symbol) [0x00007FF6D0032CCC]
+	(No symbol) [0x00007FF6D0015D93]
+	(No symbol) [0x00007FF6CFFE4BDC]
+	(No symbol) [0x00007FF6CFFE5C64]
+	GetHandleVerifier [0x00007FF6D050E16B+3695259]
+	GetHandleVerifier [0x00007FF6D0566737+4057191]
+	GetHandleVerifier [0x00007FF6D055E4E3+4023827]
+	GetHandleVerifier [0x00007FF6D02304F9+689705]
+	(No symbol) [0x00007FF6D010C048]
+	(No symbol) [0x00007FF6D0108044]
+	(No symbol) [0x00007FF6D01081C9]
+	(No symbol) [0x00007FF6D00F88C4]
+	BaseThreadInitThunk [0x00007FFC8D2E257D+29]
+	RtlUserThreadStart [0x00007FFC8F56AA58+40]
+</status>
+</test>
+<status status="FAIL" starttime="20240118 16:41:53.972" endtime="20240118 16:42:08.551"></status>
+</suite>
+<status status="FAIL" starttime="20240118 16:41:53.970" endtime="20240118 16:42:08.554"></status>
+</suite>
+<status status="FAIL" starttime="20240118 16:41:53.949" endtime="20240118 16:42:08.556"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="ProyekBigio">ProyekBigio</stat>
+<stat pass="0" fail="1" id="s1-s1" name="TestSuite">ProyekBigio.TestSuite</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="PassForgotPassword">ProyekBigio.TestSuite.PassForgotPassword</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
